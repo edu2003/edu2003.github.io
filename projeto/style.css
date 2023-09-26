@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: 'Optimus Princeps';
+    src: url(font/OptimusPrinceps.ttf);
+}
+@font-face{
+    font-family: 'CormorantGaramond';
+    src: url(font/CormorantGaramond-Regular.ttf);
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    background-color: rgb(34, 34, 34);
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav{
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+}
+
+nav a{
+    padding: 10px;
+    font-family: 'CormorantGaramond';
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+
+.img-main img{
+    width: 100%;
+}
+
+.img-main h1{
+    font-family: 'Optimus Princeps';
+    font-size: 8vw;
+    position: absolute;
+    text-align: center;
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 4%;
+}
+
+
+
+.introducao{
+    margin-top: 7%;
+    text-align: center;
+    
+}
+
+.introducao h2{
+    margin-top: 7%;
+    margin-bottom: 5%;
+    font-family: 'Optimus Princeps';
+    color: white;
+    font-size: 40px; 
+}
+
+.introducao p{
+    font-family: 'CormorantGaramond';
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+.slides{
+    margin-top: 10%;
+}
+
+.slides h2{
+    margin-top: 7%;
+    margin-bottom: 7%;
+    font-family: 'Optimus Princeps';
+    color: white;
+    font-size: 45px; 
+    text-align: center;
+}
+
+.slides p{
+    color: white;
+    font-family: 'CormorantGaramond';
+    font-size: 20px;
+}
+
+.slides h3{
+    color: white;
+    font-size: 30px;
+    font-family: 'Optimus Princeps';
+}
+
+.triologia{
+    text-align: center;
+}
+
+.triologia h2{
+    margin-top: 10%;
+    margin-bottom: 7%;
+    font-family: 'Optimus Princeps';
+    color: white;
+    font-size: 40px;
+}
+
+.primeiro-jogo {
+    perspective: 1000px;
+    transition: transform 0.4s;
+}
+
+.primeiro-jogo:hover .face {
+    transform: rotateY(180deg);
+}
+
+.face {
+    width: 100%;
+    height: 500px;
+    transform-style: preserve-3d;
+    transition: transform 0.4s;
+    background-repeat: no-repeat;
+}
+
+.back1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-image: url('img/capa1red.png'); /* Mude a imagem de fundo conforme necessário */
+    transform: rotateY(0deg);
+}
+
+.back2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-image: url('img/capa2red.png'); /* Mude a imagem de fundo conforme necessário */
+    transform: rotateY(0deg);
+}
+
+
+.back3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-image: url('img/capa3red.png'); /* Mude a imagem de fundo conforme necessário */
+    transform: rotateY(0deg);
+}
+
+.front1, .front2, .front3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background-color: rgb(22, 22, 22);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.front1, .front2, .front3 p{
+    font-family:'CormorantGaramond';
+    color: white;
+    font-size: 17px;
+}
+
+.comunidade{
+    text-align: center;
+}
+
+.comunidade h2{
+        margin-top: 7%;
+        margin-bottom: 5%;
+        font-family: 'Optimus Princeps';
+        color: white;
+        font-size: 40px; 
+}
+
+.comunidade p{
+        font-family: 'CormorantGaramond';
+        color: white;
+        font-size: 20px;
+}
+
+.social-icon{font-size: 40px; color:white; margin-right: 30px;}
+.social-links{font-size: 40px; margin-top: 20px; padding-bottom: 20px;}
+
+.linha-footer{
+    border: 1px solid white;
+    margin: 4% 5%;
+    margin-bottom: 2%;
+}
+
+.items-lista li a{
+    text-decoration: none;
+    font-family: 'CormorantGaramond';
+    font-size: 25px;
+    color: white;
+    margin: 20px;
+}
+
+footer h3{
+    color: white;
+}
+
+

@@ -1,0 +1,129 @@
+@media only screen and (max-width: 768px) {
+    *{
+        margin: 0;
+        border: 0;
+        box-sizing: border-box;
+    }
+    
+    @font-face{
+        font-family: 'Optimus Princeps';
+        src: url(font/OptimusPrinceps.ttf);
+    }
+    @font-face{
+        font-family: 'CormorantGaramond';
+        src: url(font/CormorantGaramond-Regular.ttf);
+    }
+    
+    body{
+        background-color: black;
+    }
+    
+    header{
+        background-color: rgb(34, 34, 34);
+    }
+
+    nav a{
+        padding: 10px;
+        font-family: 'CormorantGaramond';
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .img-main{
+        margin-top: 50px;
+    }
+
+    .img-main img{
+        width: 100%;
+    }
+    
+    .img-main h1{
+        font-family: 'Optimus Princeps';
+        font-size: 8vw;
+        position: absolute;
+        text-align: center;
+        color: white;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 4%;
+    }
+    
+    
+    
+    
+    .triologia{
+        text-align: center;
+    }
+    
+    .triologia h2{
+        margin-top: 10%;
+        margin-bottom: 7%;
+        font-family: 'Optimus Princeps';
+        color: white;
+        font-size: 40px;
+    }
+ 
+
+    .primeiro-jogo:hover .face {
+        transform: rotateY(180deg);
+    }
+    
+    .face {
+        width: 100%;
+        height: 300px;
+        transform-style: preserve-3d;
+        transition: transform 0.4s;
+        background-repeat: no-repeat;
+    }
+    
+    .back1 {
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        backface-visibility: hidden;
+        background-image: url('img/capa1red.png'); /* Mude a imagem de fundo conforme necessário */
+        transform: rotateY(0deg);
+    }
+    
+    .back2 {
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        backface-visibility: hidden;
+        background-image: url('img/capa2red.png'); /* Mude a imagem de fundo conforme necessário */
+        transform: rotateY(0deg);
+    }
+    
+    
+    .back3 {
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        backface-visibility: hidden;
+        background-image: url('img/capa3red.png'); /* Mude a imagem de fundo conforme necessário */
+        transform: rotateY(0deg);
+    }
+    
+    .front1, .front2, .front3 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+        background-color: rgb(22, 22, 22);
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .front1, .front2, .front3 p{
+        font-family:'CormorantGaramond';
+        color: white;
+        font-size: 10px;
+    }
+    
+  
+    
+  }
